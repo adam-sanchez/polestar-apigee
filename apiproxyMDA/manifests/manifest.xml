@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Assign-Message-1" version="SHA-512:3165d9df5c2cbbb81efd7c66972e817a4d0e92b05b7fe6f3cbe06a1b2708ba7fdaf1846fac01a1fd81fcd04663800299ff1531c79e5e84a85f46433cc88a6be3"/>
+        <VersionInfo resourceName="BA-Set-Authorization" version="SHA-512:ad6fc6d526b354f281700aab4df1d3455e6212d68be8863a540cdd24b5ed7e86e7e4cf459baec7b1fca670efdceeb210fa7101d95ca018bc5b1ecddeb3b49ff0"/>
+        <VersionInfo resourceName="Decode Basic Authentication Header" version="SHA-512:aeba1138640040a19c59c55426b5e54656628850407bc83df06beac2efd8b5dec5d4ec71ecd20cb8d6b28d726519dd6691a09c9532f2ac8e093ac83bfa5a5488"/>
+        <VersionInfo resourceName="KVM-Get-User-Credentials" version="SHA-512:15a84a3e29336c54aa8d18599c7da53117402fdbb4450ba4a9649ed3083292915e50058b80b945fca189114689318ebc29f976db3fda9bed820b9c47fc056e0c"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:39e4aaf454650fbd9bfc63f31e67d498c8f59c3c722b5bb144502e4f53e89478697202490e6dd9d41ca6b3593b7bde40e08b99e5b1478934bc9d7efc4e33936c"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:c883c404a0696f1cc52fb2b0cd7670d4ed6a63e89814b1e2476aa43b2a55f98174a456f847fcb2abb2e7223adabb75a9dc820b3ccd81ab07004b970f18b6560d"/>
+    </TargetEndpoints>
+</Manifest>

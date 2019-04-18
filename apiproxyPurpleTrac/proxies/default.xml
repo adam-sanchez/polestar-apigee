@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <RouteRule name="screening_report">
+        <TargetEndpoint>reports</TargetEndpoint>
+        <Condition>(proxy.pathsuffix MatchesPath "/screening_report**") and (request.verb = "GET")</Condition>
+    </RouteRule>
+    <RouteRule name="trade_report">
+        <TargetEndpoint>reports</TargetEndpoint>
+        <Condition>(proxy.pathsuffix MatchesPath "/trade_report**") and (request.verb = "GET")</Condition>
+    </RouteRule>
+    <Description/>
+    <FaultRules/>
+    <Flows>
+        <Flow name="sisship">
+            <Description>sisship - Search for vessels IMO</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/sisship**") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="registration">
+            <Description>Register a vessel for screening</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/registration**") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="transaction">
+            <Description>Search transactions</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/transaction**") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="screening_report">
+            <Description>Retrieve a PDF screening report</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/screening_report**") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="rescreen">
+            <Description>Rescreen transaction ID</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/transaction/{id}/rescreen**") and (request.verb = "PUT")</Condition>
+        </Flow>
+        <Flow name="transaction decline / complete">
+            <Description>Decline / Complete Screening Transaction</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/transaction/{id}**") and (request.verb = "PUT")</Condition>
+        </Flow>
+        <Flow name="transaction track">
+            <Description>Track screened vessel</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/transaction/{id}/track**") and (request.verb = "PUT")</Condition>
+        </Flow>
+        <Flow name="position">
+            <Description>Get vessel positions</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/position**") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="trade_report">
+            <Description>Retrieve a PDF trade report</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/trade_report**") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="status">
+            <Description>Non auth System Status</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/status") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="shipdetails">
+            <Description>shipdetails</Description>
+            <Request>
+                <Step>
+                    <Name>shipdetailsonlyaccess</Name>
+                    <Condition>(request.queryparam.username != "adam.trader") and (request.queryparam.username != "adam.sanchez") and (request.queryparam.username != "creditsuissetest.api") </Condition>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/shipdetails**") and (request.verb = "GET")</Condition>
+            <Flow name="shipdetails">
+                <Request/>
+                <Response/>
+                <Condition>(proxy.pathsuffix MatchesPath "/shipdetails**") and (request.verb = "GET")</Condition>
+            </Flow>
+            <Flow name="Unknown">
+                <Request>
+                    <Step>
+                        <Name>shipdetailsonlyaccess</Name>
+                    </Step>
+                </Request>
+                <Response/>
+            </Flow>
+        </Flow>
+        <Flow name="unknown resource">
+            <Description>Deny access to non flow proxy endpoints</Description>
+            <Request>
+                <Step>
+                    <Name>unknown resource</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "**")</Condition>
+        </Flow>
+    </Flows>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <HTTPProxyConnection>
+        <BasePath>/purpletrac/v1</BasePath>
+        <Properties/>
+        <VirtualHost>vhapi</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+</ProxyEndpoint>

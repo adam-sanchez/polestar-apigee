@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Assign-Message-1" version="SHA-512:5089c89ec13e31452259069285afa2ac3b671d1f61fce39750740d759fd11b08b7bf485d18d777fda429113531b7985a9039e769a7673392b3be30e6f7f9d97c"/>
+        <VersionInfo resourceName="Statistics-Collector-ptrac-username" version="SHA-512:73a1bd46f8e73c84883bf4df3af6df060ed4cc804d91c6b8fa420face7735618e953fa0d7cdef9f3ca1121cac8aa1d60c13a75557417e3a76b4d4bdcb3332ea6"/>
+        <VersionInfo resourceName="add-cors" version="SHA-512:86b1ae9a70af85c062d7d8ff5892daa9408a1806302bb373fd3b5f55d08f6467280c691703379fc46f58cd21b6f309175ddf7f120ca4f04ee952c7194368314f"/>
+        <VersionInfo resourceName="shipdetailsonlyaccess" version="SHA-512:5b36a30d30a43e75815c6cf45b0b899cd5d0a7f7d0bbabab5d785ee6c9bc335c6fe07efb678b39fc3697d5c3941374f8fb5d12dccb689ab36388dcae50acfbee"/>
+        <VersionInfo resourceName="unknown resource" version="SHA-512:97e9b9429054e6c99a2482e472bdb192d821ad8d7174e6bc14020eac749e5020845b81b551b835fca7e4fe3e968c497432aaba4273dde16995576c0a3014199b"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:59a0baa6a7b873d73de2183b938bc524e835ee393873d315494f10887b7edd818c5dbadd1a0c6b78158b1ae9423c1c9c764cad52e4d099a6b119e884bf6ce72b"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:e7da77964b00ba54150d5ff53e9fd4c03ba9df9dfa5c420529aa3acea120ff3d0d990379f8696fb29e3bce537afac6fd5948916492e75b9facf654a616485f95"/>
+        <VersionInfo resourceName="reports" version="SHA-512:9d115708cd3a2a6f70050491e045dc70c71cd487b7c93a427c424024bf15ba8eb7fa653c7a97a520181e67ad8a8d51b2ac89419bd0aba0a1c6600b157013e061"/>
+    </TargetEndpoints>
+</Manifest>

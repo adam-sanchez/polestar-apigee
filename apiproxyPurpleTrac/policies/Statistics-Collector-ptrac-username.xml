@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StatisticsCollector async="false" continueOnError="false" enabled="true" name="Statistics-Collector-ptrac-username">
+    <DisplayName>Statistics-Collector-ptrac-username</DisplayName>
+    <Properties/>
+    <Statistics>
+        <Statistic name="username" ref="request.queryparam.username" type="STRING">value</Statistic>
+    </Statistics>
+</StatisticsCollector>

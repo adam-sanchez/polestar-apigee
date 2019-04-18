@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="PurpleTrac">
+    <Basepaths>/purpletrac/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1555580507626</CreatedAt>
+    <CreatedBy>adam.sanchez@polestarglobal.com</CreatedBy>
+    <Description>PurpleTrac API</Description>
+    <DisplayName>PurpleTrac</DisplayName>
+    <LastModifiedAt>1555580507626</LastModifiedAt>
+    <LastModifiedBy>adam.sanchez@polestarglobal.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:d078140bf0b42d7e31d67592b4721a811d393348c3735a16f2c8da458c183dac3b8a9324d098b63378c503a7c2ccbd4d0f34e216c11f7d7f21c053ee4fa67f83</ManifestVersion>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Statistics-Collector-ptrac-username</Policy>
+        <Policy>add-cors</Policy>
+        <Policy>shipdetailsonlyaccess</Policy>
+        <Policy>unknown resource</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+        <TargetEndpoint>reports</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

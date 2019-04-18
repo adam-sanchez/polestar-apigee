@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="MDA">
+    <Basepaths>/mda</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1533808553042</CreatedAt>
+    <CreatedBy>adam.sanchez@polestarglobal.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>MDA</DisplayName>
+    <LastModifiedAt>1534240854175</LastModifiedAt>
+    <LastModifiedBy>adam.sanchez@polestarglobal.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:ba5b52bb999ee21f46780eb1bf2c4156cf8090569c522473bac31e5250735320666badd505432a74c1b311daffa3b2adf2951b7066b716351c73a085c7cc5a80</ManifestVersion>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>BA-Set-Authorization</Policy>
+        <Policy>Decode Basic Authentication Header</Policy>
+        <Policy>KVM-Get-User-Credentials</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
